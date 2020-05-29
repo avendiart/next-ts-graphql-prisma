@@ -7,7 +7,7 @@ const client = new ApolloClient({
     uri: 'http://localhost:3000/api/graphql',
     // @ts-ignore
     fetch,
-  })
+  }),
 })
 
 export default client

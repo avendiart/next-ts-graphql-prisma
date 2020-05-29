@@ -11,14 +11,9 @@ export type Scalars = {
   Float: number
 }
 
-export type Query = {
-  __typename?: 'Query'
-  ping?: Maybe<Scalars['Boolean']>
-}
-
 export type PingQueryVariables = {}
 
-export type PingQuery = { __typename?: 'Query' } & Pick<Query, 'ping'>
+export type PingQuery = { __typename?: 'Query'; ping?: Maybe<boolean> }
 
 export const PingDocument = gql`
   query Ping {

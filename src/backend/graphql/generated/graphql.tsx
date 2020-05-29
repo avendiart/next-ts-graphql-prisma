@@ -11,7 +11,7 @@ export type Scalars = {
 
 export type Query = {
   __typename?: 'Query'
-  ping?: Maybe<Scalars['Boolean']>
+  ping: Maybe<Scalars['Boolean']>
 }
 
 export type ResolverTypeWrapper<T> = Promise<T> | T
@@ -97,11 +97,11 @@ export type ResolversParentTypes = {
 }
 
 export type QueryResolvers<ContextType = any, ParentType extends ResolversParentTypes['Query'] = ResolversParentTypes['Query']> = {
-  ping?: Resolver<Maybe<ResolversTypes['Boolean']>, ParentType, ContextType>
+  ping: Resolver<Maybe<ResolversTypes['Boolean']>, ParentType, ContextType>
 }
 
 export type Resolvers<ContextType = any> = {
-  Query?: QueryResolvers<ContextType>
+  Query: QueryResolvers<ContextType>
 }
 
 /**
